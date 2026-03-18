@@ -5,7 +5,8 @@ _________________________________________________________
 ## Setup the project environment
 
 ```sh
-composer setup
+composer install
+npm install
 ```
 
 ## Setup Docker Container
@@ -57,8 +58,10 @@ docker ps -aq | xargs docker stop | xargs docker rm
 ### Launch Initial Data Migration in  (Git Bash Terminal)
 
 ```sh
+composer require league/flysystem-aws-s3-v3 "^3.0" --with-all-dependencies
 php artisan key:generate
-./ss migrate
+php artisan storage:link
+php artisan migrate
 ```
 
 ## Run Developer Mode
