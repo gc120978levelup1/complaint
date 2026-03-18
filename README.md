@@ -2,7 +2,7 @@
 Laravel + Vue3 + Docker
 _________________________________________________________
 
-## Setup
+## Setup Docker Container
 
 ### Check Containers Status in (Git Bash Terminal)
 
